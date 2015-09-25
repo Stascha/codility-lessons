@@ -1,7 +1,7 @@
 package codility.lesson.v;
 
 /**
- * Brackets lesson.
+ * Lesson 5: Brackets.
  * @author Felipe Pina (felipe.pina@protonmail.com)
  * @version $Id$
  * @since 1.0
