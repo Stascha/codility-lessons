@@ -6,7 +6,7 @@ import org.hamcrest.Matchers;
 import org.junit.Test;
 
 /**
- * Tests for {@link codility.lesson.vi.EquiLeader}.
+ * Tests for {@link EquiLeader}.
  * @author Felipe Pina (felipe.pina@protonmail.com)
  * @version $Id$
  * @since 1.0

@@ -25,6 +25,11 @@ public final class EquiLeader {
     private transient int last;
 
     /**
+     * Repetitions (number of times the leader occurs in the array).
+     */
+    private transient int repetitions;
+
+    /**
      * Solves the lesson.
      * @param A Input array A.
      * @return The number of equileaders of A
@@ -35,19 +40,8 @@ public final class EquiLeader {
         if (index != -1) {
             final int leader = A[index];
             int left = 0;
-            if (A[0] == leader) {
-                left++;
-            }
-            int right = 0;
-            for (int idx = 1; idx < A.length; ++idx) {
-                if (A[idx] == leader) {
-                    right++;
-                }
-            }
-            if (right > (A.length - 1) / 2) {
-                equi++;
-            }
-            for (int idx = 1; idx < A.length; ++idx) {
+            int right = this.repetitions;
+            for (int idx = 0; idx < A.length - 1; ++idx) {
                 if (A[idx] == leader) {
                     right--;
                     left++;
@@ -75,13 +69,13 @@ public final class EquiLeader {
         }
         final int index;
         if (this.count > 0) {
-            int repetitions = 0;
+            this.repetitions = 0;
             for (final int val : array) {
                 if (val == this.value) {
-                    repetitions++;
+                    this.repetitions++;
                 }
             }
-            if (repetitions <= array.length / 2 ) {
+            if (this.repetitions <= array.length / 2 ) {
                 index = -1;
             } else {
                 index = this.last;
