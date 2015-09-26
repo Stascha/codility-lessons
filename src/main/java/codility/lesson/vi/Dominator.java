@@ -20,7 +20,7 @@ public final class Dominator {
     private transient int value;
 
     /**
-     * Index of
+     * Index of last candidate leader.
      */
     private transient int last;
 
