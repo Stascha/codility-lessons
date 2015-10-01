@@ -1,6 +1,5 @@
-package codility.lessons.vi;
+package codility.lesson.vi;
 
-import codility.lesson.vi.Dominator;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.Test;

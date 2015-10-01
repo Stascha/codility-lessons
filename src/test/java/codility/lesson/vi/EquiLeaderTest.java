@@ -1,4 +1,4 @@
-package codility.lessons.vi;
+package codility.lesson.vi;
 
 import codility.lesson.vi.EquiLeader;
 import org.hamcrest.MatcherAssert;
